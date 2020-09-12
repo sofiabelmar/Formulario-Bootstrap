@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Componentes</title>
+  </head>
+  <body>
+    <div class="container">
+        <div  class="row justify-content-md-center">
+            <div class="col col-10 py-5 px-5 text-center"  >
+                <img  width="100" height="100" src="data:image/png;base64,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" />
+                <div class="py-4">
+                <h3 class="text-center ">Formulario de pago</h3>
+                <p>Esto es un ejemplo de formulario de pago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col col-8">
+                <h4>Dirección de facturación</h4>
+                <div class="row">
+                <div class="col-6">
+                   <div class="form-group">
+                        <label>Nombre</label>
+                        <input type="email" class="form-control" >
+                   </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                         <label>Nombre</label>
+                         <input type="email" class="form-control" >
+                    </div>
+                 </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Username</label>
+                    <div class="input-group flex-nowrap">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" >@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Username">
+                      </div>
+               </div>
+               <div class="form-group">
+                <label>Email (Opcional)</label>
+                <input type="email" class="form-control" placeholder="correo@lasalle.edu.mx" >
+                </div>
+           
+
+                <div class="form-group">
+                    <label>Dirección de envío</label>
+                    <input type="email" class="form-control" placeholder="Veracruz S/N" >
+                    </div>
+
+                <div class="form-group">
+                    <label>Dirección 2(Opcional)</label>
+                    <input type="email" class="form-control" placeholder="Numero interior, Suite" >
+                </div>
+            
+                <div class="row">
+                    <div class="col col-5">
+                        <label >País</label>
+                        <select class="custom-select" >
+                          <option selected disabled value="">Elegir</option>
+                          <option>...</option>
+                        </select>
+                    </div>
+
+                    <div class="col col-4">
+                        <label >Estado</label>
+                        <select class="custom-select" >
+                          <option selected disabled value="">Elegir</option>
+                          <option>...</option>
+                        </select>
+                    </div>
+
+                    <div class="col col-3">
+                        <label >Zip</label>
+                        <input type="email" class="form-control"  >
+                    </div>
+
+                </div>
+                <br>
+                <hr>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" >
+                    <label class="custom-control-label" >Mi dirección de entrega es la misma que de facturación</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" >
+                    <label class="custom-control-label" >Guardar esta información para la proxima ocasión</label>
+                </div>
+                <hr>
+
+                <h3>Pago</h3>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio"  checked>
+                    <label class="form-check-label" >
+                      Tarjeta de débito
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" >
+                    <label class="form-check-label" >
+                      Tarjeta de crédito
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" >
+                    <label class="form-check-label">
+                      Paypal
+                    </label>
+                </div>
+               <br>
+                <div class="row">
+                    <div class=" col col-6">
+                        <div class="form-group">
+                            <label> Nombre de la Tarjeta</label>
+                            <input type="email" class="form-control" >
+                            <small  class="form-text text-muted">Nombre completo como aparece en la tarjeta</small>
+                       </div>
+                    </div>
+                    <div class=" col col-6">
+                        <div class="form-group">
+                            <label> Número de la tarjeta</label>
+                            <input type="email" class="form-control" >
+                            
+                       </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class=" col col-3">
+                        <div class="form-group">
+                            <label>Expiración</label>
+                            <input type="email" class="form-control" >
+                            
+                       </div>
+                    </div>
+                    <div class=" col col-3">
+                        <div class="form-group">
+                            <label>CVV</label>
+                            <input type="email" class="form-control" >
+                            
+                       </div>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <button type="button " class="btn btn-primary btn-lg btn-block">Continuar con el pago</button>
+            </div>
+
+           
+
+            <div class="col col-4">
+                <div class="row">
+                    <div class="col col-10">
+                        <h4 class="text-muted">Carrito</h4>
+                    </div>
+                    <div class="col col-2">
+                       <h4> <span class="badge badge-pill badge-secondary">3</span></h4>
+                    </div>
+                </div>
+                
+
+                <div class="card" >
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title">Mollete</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Delicioso pan con frijol cubierto de queso derretido</h6>
+                            </div>
+                            <div class="col-3">
+                                <h5 class="card-title text-muted">$20</h5>
+                            </div>
+                        </div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="card" >
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title">Coca de vidrio</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Dulce elixir de los dioses contenido en una botella de cristal para conservar al máximo su sabor</h6>
+                            </div>
+                            <div class="col-3">
+                                <h5 class="card-title text-muted">$15</h5>
+                            </div>
+                        </div>
+                     
+                    </div>
+                  </div>
+
+                  <div class="card" >
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title">Gansito</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Dulce pastelito relleno de fresa y crema con cubierta de chocolate. Recuérdame!</h6>
+                            </div>
+                            <div class="col-3">
+                                <h5 class="card-title text-muted">$15</h5>
+                            </div>
+                        </div>
+                     
+                    </div>
+                  </div>
+
+                  <div class="card-footer text-success" >
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title">Cupón</h5>
+                                <h6 class="card-subtitle mb-2 ">COVID-19</h6>
+                            </div>
+                            <div class="col-3">
+                                <h5 class="card-title ">-$5</h5>
+                            </div>
+                    </div>
+                  </div>
+
+                  <div class="card" >
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-9">
+                                <h5 class="card-title">Total(MXN)</h5>
+                            </div>
+                            <div class="col-3">
+                                <h5 class="card-title ">$45</h5>
+                            </div>
+                        </div>
+                     
+                    </div>
+                  </div>
+
+                  <br>
+                  <div class="card" >
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Código de Cupón">
+                            <div class="input-group-append">
+                              <button class="btn btn-secondary" type="button" id="button-addon2">Ingresar</button>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+
+                 
+
+               
+        </div>
+       
+    </div>
+            <footer>
+                <div class="footer-copyright text-center py-5 " >© 2020 Universidad La Salle Noroeste
+                    <br>
+            
+                    <a href="https://mdbootstrap.com/"> Aviso de privacidad</a> &nbsp
+                    <a href="https://mdbootstrap.com/"> Términos y condiciones  </a> &nbsp
+                    <a href="https://mdbootstrap.com/">Contácto</a> &nbsp
+                  </div>
+            </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
